@@ -1,0 +1,13 @@
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+
+gulp.task('styles', function() {
+  gulp.src('assets/sass/**/*.sass')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('assets/css/'));
+});
+
+//Watch task
+gulp.task('default', function() {
+  gulp.watch('assets/sass/**/*.sass', ['styles']);
+});
