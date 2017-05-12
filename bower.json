@@ -1,0 +1,21 @@
+{
+  "name": "veg4you",
+  "description": "Clube de assinaturas para veganos e vegetarianos",
+  "main": "index.js",
+  "authors": [
+    "gabrieleq <gabriel.evan.queiroz@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/GabrielEQ/veg4you",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "owl.carousel": "^2.2.1"
+  }
+}
