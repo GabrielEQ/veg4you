@@ -457,13 +457,18 @@ a {
 
 .thumb {
   width: 50%;
-  float: left; }
+  float: left;
+  overflow: hidden; }
 
-.thumb img {
+.thumb > img {
   width: 100%;
   transition: all 500ms; }
-  .thumb img:hover {
-    transform: scale(1.05); }
+  .thumb > img:hover {
+    -webkit-transform: scale(1.08);
+      -webkit-transform--moz-transform: scale(1.08);
+      -webkit-transform--o-transform: scale(1.08);
+      -webkit-transform--ms-transform: scale(1.08);
+      -webkit-transform-transform: scale(1.08); }
 
 .thumb-caption {
   position: absolute;
@@ -483,7 +488,7 @@ a {
   z-index: 10; }
 
 .wood-bg {
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg-wood.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 

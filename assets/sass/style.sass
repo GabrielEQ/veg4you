@@ -129,11 +129,17 @@ a
 .thumb
 	width: 50%
 	float: left
-.thumb img
+	overflow: hidden
+
+.thumb > img
 	width: 100%
 	transition: all 500ms
 	&:hover
-		transform: scale(1.05)
+		-webkit-transform: scale(1.08)
+        -moz-transform: scale(1.08)
+        -o-transform: scale(1.08)
+        -ms-transform: scale(1.08)
+        transform: scale(1.08)
 
 .thumb-caption
 	position: absolute
@@ -153,7 +159,7 @@ a
 	z-index: 10
 
 .wood-bg
-	background-image: url('../images/bg.jpg')
+	background-image: url('../images/bg-wood.jpg')
 	background-repeat: no-repeat
 	background-size: cover
 	
