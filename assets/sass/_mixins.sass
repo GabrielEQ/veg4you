@@ -1,0 +1,53 @@
+$pink: #fd003d
+$acua-green: #007F7F
+$green: #26B44C
+$white: white
+.btn-primary
+  padding: 20px 45px
+  border-radius: 5px
+  background: $pink
+  border: 0
+  &:hover
+    background: $white
+    color: $pink
+
+// mixin gradient
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+=transition($transition...)
+  -moz-transition:    all $transition linear
+  -o-transition:      all $transition linear
+  -webkit-transition: all $transition linear
+  transition:         all $transition linear
+
+=opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie)
+
+
+// keyframes mixin
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+// use of keyframes mixin
++keyframes(bgcolor)
+  0%
+    background-color: #ffccf2
+  50%
+    background-color: #ccffcc
+  100%
+    background-color: #ccffff
