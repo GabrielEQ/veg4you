@@ -5,7 +5,7 @@
 	<title>VEG 4YOU</title>
 	<!-- banner-rotativo -->
 	<link rel="stylesheet" href="assets/css/banner.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+	<link rel="stylesheet" href="assets/css/slick-theme.css"/>
 
 	<!-- estilo -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -16,15 +16,17 @@
 		<div class="top-info">
 			<div class="top-contact-info">
 				<ul>
-					<li><a href="">contato@veg4you.com.br</a></li>
-					<li><a href="">(11) 94026-2001</a></li>
+					<li><a href="mailto:contato@veg4you.com.br">contato@veg4you.com.br</a></li>
+					<li><a href="tel:11940262001">(11) 94026-2001</a></li>
 				</ul>
 			</div>
 			<div class="top-social">
 				<ul>
-					<li><a href=""><img src="" alt="">F</a></li>
-					<li><a href=""><img src="" alt="">I</a></li>
-					<li><a href=""><img src="" alt="">T</a></li>
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="sprite sprite-004-social"></i></a></li>
+					<li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="sprite sprite-003-social-media"></i></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><i class="sprite sprite-001-black"></i></a></li>
+					<li><a href="https://plus.google.com" target="_blank"><i class="sprite sprite-002-social-media-1"></i></a></li>
+					
 				</ul>
 			</div>
 		</div>
@@ -32,26 +34,51 @@
 			<div class="logo">
 				<a href="">LOGO</a>
 			</div>
+			<div class="search-bar">
+				<input type="text" id="search" placeholder="O que você procura?">
+			</div>
 			<div class="navbar-links">
 				<ul>
-					<li><a class="main-link" href="#">A VEG4YOU</a></li>
+					<li><a class="main-link" href="#">Quem somos</a></li>
 					<li><a class="main-link" href="#">Produtos</a></li>
 					<li><a class="main-link" href="#">Marcas</a></li>
 					<li><a class="main-link" href="#">Entrega</a></li>
 					<li><a class="main-link" href="#">Dúvidas</a></li>
-					<li><a class="btn btn-secundario btn-sec" href="#">Entrar</a></li>
-					<li><a class="btn btn-primario btn-pri" href="#">Cadastre-se</a></li>
-					<li><a class="avatar" href=""></a></li>
 				</ul>
 				
 			</div>
 			
+			<div class="btns-signIn">
+				<ul>
+					<li><a class="btn btn-secundario btn-sec" href="#">Entrar</a></li>
+					<li><a class="btn btn-primario btn-pri" href="#">Cadastre-se</a></li>
+				</ul>
+			</div>
+			<!--<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Animated Modal</button>
+
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content w3-animate-top w3-card-4">
+				<header class="w3-container w3-teal"> 
+					<span onclick="document.getElementById('id01').style.display='none'" 
+					class="w3-button w3-display-topright">&times;</span>
+					<h2>Modal Header</h2>
+				</header>
+				<div class="w3-container">
+					<p>Some text..</p>
+					<p>Some text..</p>
+				</div>
+				<footer class="w3-container w3-teal">
+					<p>Modal Footer</p>
+				</footer>
+				</div>
+			</div>
+			</div>-->
 		</nav>
 		<div class="products-menu">
 			<ul>
-				<li><a href="#">Alimentos</a></li>
-				<li><a href="#">Higiene</a></li>
-				<li><a href="#">Cosméticos</a></li>
+				<li class="alimentos"><a href="#">Alimentos</a></li>
+				<li class="higiene"><a href="#">Higiene</a></li>
+				<li class="beleza"><a href="#">Cosméticos</a></li>
 			</ul>
 		</div>
 	
@@ -61,7 +88,7 @@
 	  <div class="slideshow">
 	    <div>
 	    	<div class="slide-caption">
-				<h1>Cansado de procurar <br/>por produtos <span>vegano</span>???</h1>
+				<h1>Para <span>você</span> que..</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aut!</p>
 				
 				<div class="cta">
@@ -76,7 +103,7 @@
 	
 		<div>
 	    	<div class="slide-caption">
-				<h1></h1>
+				<h1>Para <span>você</span> que..</h1>
 				<p>Os melhores lançamentos para o inverno.</p>
 				
 				<div class="cta">
@@ -92,7 +119,7 @@
 		
 			<div>
 	    	<div class="slide-caption">
-				<h1>Cansado de procurar <br/>por produtos <span>vegano</span>???</h1>
+				<h1>Para <span>você</span> que..</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aut!</p>
 				
 				<div class="cta">
@@ -102,19 +129,18 @@
 	    <div class="slide-image">
 	    	<img src="assets/images/slide1.jpg" alt="">
 	    	</div>
-		
-			
 	    </div>
 	  </div>
 	</div>
 	
 
 <section class="sec-2 wood-bg">
-<div class="sec-2-title bg-green">
-<h2>A veg pensa em você</h2>
+<div class="bg-green sec-2-title">
+	<h2>A veg 4YOU facilita a sua vida</h2>
+	<p>Basicamente concentramos as novidades do mercado vegano/vegetariano em um só lugar. Basta escolher um dos planos, mensal, trimestral ou semestral e pronto. Sua cesta chegará até você sem precisar sair de sua casa.</p>
 </div>
 
-		<!--<div class="container">
+		<div class="container">
 			<div class="post">
 				<div class="post-item">
 					<div class="posts-1">
@@ -127,9 +153,9 @@
 				</div>
 				
 			</div>
-		</div>-->
+		</div>
 		
-		<div class="container">
+		<!--<div class="container">
 		<article class="features">
 			<div class="column">
 				<div class="column-item card">
@@ -160,7 +186,7 @@
 				</div>
 			</div>
 		</article>
-		</div>
+		</div>-->
 
 	
 	</section>
