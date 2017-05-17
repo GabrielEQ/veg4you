@@ -1,8 +1,11 @@
 @import mixins
 @import ../../node_modules/normalize-sass/normalize
 
+.custom-title
+	font-family: 'Permanent Marker', sans-serif
+
 p
-	font-family: 'Short Stack'
+	font-family: 'Short Stack', cursiva, serif
 // sprite icons
 .sprite
 	background-image: url(spritesheet.png)
@@ -52,7 +55,7 @@ a
 	a
 		color: #526b54
 
-.top-contact-info 
+.top-contact-info
 	display: inline-block
 
 .top-contact-info li
@@ -71,7 +74,7 @@ a
 			padding: 5px
 
 .navbar
-	padding: 5px 
+	padding: 5px
 	background: #262525
 
 .logo
@@ -85,12 +88,12 @@ a
 		font-size: 16px
 		font-weight: bold
 		border: 3px solid #FFF
-		padding: 5px 10px 
+		padding: 5px 10px
 
 
 .navbar-links
 	ul
-		
+
 		li
 			display: inline-block
 			padding: 0 20px
@@ -98,8 +101,8 @@ a
 			letter-spacing: 1px
 			text-transform: uppercase
 			border-right: 1px solid #9bd14c
-		
-.search-bar	
+
+.search-bar
 	// float: left
 	input
 		outline: none
@@ -107,7 +110,7 @@ a
 		background: transparent
 		border: 0
 		border-bottom: solid #FFF 3px
-		width: 700px
+		width: 300px
 		-webkit-transition: all 0.5s ease-in-out
 		-moz-transition: all 0.5s ease-in-out
 		-ms-transition: all 0.5s ease-in-out
@@ -133,16 +136,16 @@ a
 			display: inline-block
 			margin: 0 5px
 
-	
+
 .products-menu
 	text-align: center
 	border-top: 1px solid #303030
 	background: #262525
 	font-size: 18px
-	ul 
+	ul
 		margin: 0
 		li
-			width: 300px
+			width: 170px
 			margin: 0
 			display: inline-block
 			padding: 10px 70px
@@ -165,19 +168,19 @@ a
 	font-size: 22px
 
 
-.avatar
+`.avatar
 	width: 50px
 	height: 50px
-	background: url('../images/avatar.png')
+	background: url('../images/avatar.png')`
 
 .search
 	float: left
 	width: 100px
-	
+
 .search-input
 	color: #FFF
 	border-bottom: solid 2px #FFF
-	
+
 .sec-products
 	padding: 70px
 	background: #ddd
@@ -187,7 +190,7 @@ a
 .banner
 	width: 100%
 	height: 350px
-	
+
 .slideshow img
 	width: 100%
 	height: auto
@@ -231,7 +234,7 @@ a
 	width: 100px
 	fill: #8cc63f
 	transition: all 300ms
-	&:hover 
+	&:hover
 		fill: #e8d03d
 
 .post
@@ -240,56 +243,27 @@ a
 	-moz-display: flex
 	-ms-display: flex
 	-o-display: flex
-	display: flex	
-	margin-top: -5%
+	display: flex
+	align-items: flex-end
 
 
-	
 .post-item
 	width: 100%
-	height: 300px
+	height: auto
 	// background: #FFF
-	margin: 10px 5px
+	margin: 25px 5px
 	border-radius: 3px
 	overflow: hidden
+	img
+		width: 100%
 
-	
-.post-1 > img
-	width: 100%
-	border-radius: 2px
-	-webkit-transition: all .8s cubic-bezier(.190,1.000,.220,1.000)
-	-ms-transition: all .8s cubic-bezier(.190,1.000,.220,1.000)
-	-moz-transition: all .8s cubic-bezier(.190,1.000,.220,1.000)
-	-o-transition: all .8s cubic-bezier(.190,1.000,.220,1.000)
-	transition: all .8s cubic-bezier(.190,1.000,.220,1.000)
 
-.post-1:hover > img
-		-webkit-transform:scale(1.5)
-		-moz-transform:scale(1.5)
-		-o-transform:scale(1.5)
-		-ms-transform:scale(1.5)
-		transform:scale(1.5)
-
-.post-item-gradient
-	+gradient(0deg, rgba(0,0,0,0.70) , rgba(0,0,0,0.0))
-	width: 100%
-	height: 100%
-	position: relative
-
-.post-item-caption
-	position: absolute
-	z-index: 10
-	top: 80%
-	left: 20%
-	p
-		color: #FFF
-		font-size: 42px
-		font-family: 'Permanent Marker'
 
 .wood-bg
-	background-image: url('../images/bg-wood.jpg')
+	background-image: url('../images/bg-wood.png')
 	background-repeat: no-repeat
 	background-size: cover
+	background-position: center center
 
 .slide-caption
 	padding: 120px 10%
@@ -301,7 +275,6 @@ a
 	left: 0
 	bottom: 0
 	h1
-		font-family: 'Permanent Marker'
 		color: #FFF
 		font-size: 50px
 		margin: 0
@@ -309,12 +282,11 @@ a
 			color: #84c73e
 	p
 		color: #FFF
-		font-family: 'Short Stack'
 		font-size: 16px
 
 .sec-2
     width: 100%
-    height: auto
+    height: 850px
     position: relative
     margin: 150px 0 0
     padding: 0 0 50px
@@ -332,25 +304,23 @@ a
 	background-color: #9bd14c
 
 .sec-2-title
+	width: 800px
 	padding: 70px
 	text-align: center
-	line-height: 1.5
+	line-height: 1.2
+	margin: 0 auto
 	h2
-		font-family: 'Permanent Marker'
 		font-size: 42px
 		color: #FFF
+		letter-spacing: 2px
 		margin: 2px
-	p
-		color: #526b54
-		font-size: 18px
-		width: 720px
-		margin: 0 auto
-.posts-1
-	border-radius: 5px
-	width: 300px
-	height: 100px
-	img
-		width: 100%
+
+.about
+	text-align: center
+	color: #fff
+	font-size: 18px
+	margin: 35px auto
+
 .column
 	display: -webkit-flex
 	display: -moz-flex
@@ -360,7 +330,7 @@ a
 	justify-content: space-around
 
 // button reset
-.btn 
+.btn
 	border: none
 	font-family: inherit
 	font-size: inherit
@@ -376,7 +346,7 @@ a
 	-moz-transition: all 0.3s
 	transition: all 0.3s
 
-.btn:after 
+.btn:after
 	content: ''
 	position: absolute
 	z-index: -1
@@ -422,7 +392,7 @@ a
 .btn-sec:hover
 	box-shadow: 0 8px #c9c9c9
 	top: -2px
-	
+
 .btn-sec:active
 	box-shadow: 0 0 #c9c9c9
 	top: 6px
@@ -435,21 +405,20 @@ a.main-link
 .sec-newsletter
 	background-color: #e8d03d
 	padding: 40px
-	
+
 .newsletter
 	padding: 20px 0px
 	text-align: center
 
 .newsletter-heading
 	text-align: center
-	font-family: 'Permanent Marker'
 	font-size: 22px
 	line-height: 0.5
 	color: #323d32
 	p
 		font-size: 16px
 
-// input[type="text"], 
+// input[type="text"],
 // input[type="email"]
 // 	outline: none
 // 	background-color: transparent
@@ -490,4 +459,3 @@ footer
 .payment img
 	position: relative
 	width: 25%
-
