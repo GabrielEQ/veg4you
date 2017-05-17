@@ -397,7 +397,7 @@ a {
   padding: 10px; }
 
 .logo {
-  padding: 25px 50px;
+  padding: 35px 50px;
   width: 80px;
   height: auto;
   text-align: center;
@@ -427,23 +427,22 @@ a {
 .navbar-links li {
   color: #FFF; }
 
-.products-menu ul {
-  margin: 0; }
-
-.products-menu ul li {
-  display: inline-block;
-  padding: 20px;
-  border-right: 1px solid #e3e3e3; }
-  .products-menu ul li:hover {
-    background: #dddddd; }
-
-.products-menu ul li a {
-  color: #323d32; }
-
-.product-item {
-  margin: 20px; }
-  .product-item img {
-    width: 100%; }
+.products-menu {
+  text-align: center;
+  border-top: 1px solid #303030;
+  background: #262525; }
+  .products-menu ul {
+    margin: 0; }
+    .products-menu ul li {
+      margin: 0;
+      display: inline-block;
+      padding: 18px 70px;
+      border-left: 1px solid  #303030;
+      border-right: 1px solid  #303030; }
+      .products-menu ul li:hover, .products-menu ul li:focus {
+        border-bottom: 5px inset #e8d03d; }
+      .products-menu ul li a {
+        color: #FFF; }
 
 .cart {
   font-size: 22px; }
@@ -573,7 +572,12 @@ a {
 .slide-caption {
   padding: 120px 10%;
   position: absolute;
-  z-index: 200; }
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
   .slide-caption h1 {
     font-family: 'Permanent Marker';
     color: #FFF;
