@@ -2,35 +2,66 @@
 @import ../../node_modules/normalize-sass/normalize
 
 .custom-title
-	font-family: 'Permanent Marker', sans-serif
-
+	font-family: 'Walter Turncoat', sans-serif
+	font-size: 28px
 p
 	font-family: 'Short Stack', cursiva, serif
 // sprite icons
-.sprite
-	background-image: url(spritesheet.png)
-	background-repeat: no-repeat
-	display: block
+.sprite 
+    background-image: url(spritesheet.png)
+    background-repeat: no-repeat
+    display: block
 
-.sprite-001-black
-    width: 32px
-    height: 32px
+.sprite-avatar 
+    width: 52px
+    height: 58px
     background-position: -5px -5px
 
-.sprite-002-social-media-1
-    width: 32px
-    height: 32px
-    background-position: -47px -5px
+.sprite-f 
+    width: 13px
+    height: 26px
+    background-position: -67px -5px
 
-.sprite-003-social-media
-    width: 32px
-    height: 32px
-    background-position: -5px -47px
+.sprite-f-g 
+    width: 13px
+    height: 26px
+    background-position: -90px -5px
 
-.sprite-004-social
-    width: 32px
-    height: 32px
-    background-position: -47px -47px
+.sprite-g 
+    width: 26px
+    height: 22px
+    background-position: -113px -5px
+
+.sprite-g-g 
+    width: 26px
+    height: 22px
+    background-position: -149px -5px
+
+.sprite-i 
+    width: 26px
+    height: 26px
+    background-position: -185px -5px
+
+.sprite-i-g 
+    width: 26px
+    height: 26px
+    background-position: -221px -5px
+
+.sprite-payment 
+    width: 369px
+    height: 142px
+    background-position: -5px -73px
+
+.sprite-t 
+    width: 26px
+    height: 22px
+    background-position: -257px -5px
+
+.sprite-t-g 
+    width: 26px
+    height: 22px
+    background-position: -293px -5px
+
 // sprite icons end
 
 
@@ -75,20 +106,17 @@ a
 
 .navbar
 	padding: 5px
-	background: #262525
+	background: #f7f7f7
 
 .logo
-	width: 82px
+	width: 200px
 	// height: auto
 	text-align: center
-	margin: 30px 50px
+	margin: 15px 50px
 	float: left
-	a
-		color: #fff
-		font-size: 16px
-		font-weight: bold
-		border: 3px solid #FFF
-		padding: 5px 10px
+
+.clear
+	clear: both
 
 
 .navbar-links
@@ -102,26 +130,26 @@ a
 			text-transform: uppercase
 			border-right: 1px solid #9bd14c
 
-.search-bar
+
 	// float: left
-	input
-		outline: none
-		padding: 10px
-		background: transparent
-		border: 0
-		border-bottom: solid #FFF 3px
-		width: 300px
-		-webkit-transition: all 0.5s ease-in-out
-		-moz-transition: all 0.5s ease-in-out
-		-ms-transition: all 0.5s ease-in-out
-		-o-transition: all 0.5s ease-in-out
-		transition: all 0.5s ease-in-out
-		color: $white
-		font-size: 18px
-		letter-spacing: 2px
-		margin: 10px
-		&:focus
-			border-bottom: solid #84c73e  3px
+.single-input
+	outline: none
+	padding: 10px
+	background: transparent
+	border: 0
+	border-bottom: solid #526b54 3px
+	width: 300px
+	-webkit-transition: all 0.5s ease-in-out
+	-moz-transition: all 0.5s ease-in-out
+	-ms-transition: all 0.5s ease-in-out
+	-o-transition: all 0.5s ease-in-out
+	transition: all 0.5s ease-in-out
+	color: $white
+	font-size: 18px
+	letter-spacing: 2px
+	margin: 10px
+	&:focus
+		border-bottom: solid #84c73e  3px
 			// &:after
 
 
@@ -168,10 +196,10 @@ a
 	font-size: 22px
 
 
-`.avatar
+.avatar
 	width: 50px
 	height: 50px
-	background: url('../images/avatar.png')`
+	background: url('../images/avatar.png')
 
 .search
 	float: left
@@ -196,46 +224,12 @@ a
 	height: auto
 
 .cta
-	margin: 30px 0
+	margin: 70px 0
+	font-size: 14px
 
 .container
 	width: 65%
 	margin: 0 auto
-.features
-	margin-top: -30px
-
-.card
-	padding: 20px
-	text-align: center
-	border-radius: 5px
-	width: 280px
-	height: 370px
-	background-color: #FFF
-	box-shadow: 1px 3px 5px rgba(0,0,0,0.25)
-	transition: all 300ms
-	&:hover
-		transform: scale(1.03)
-
-.card h3
-	color: #2d281e
-	font-size: 26px
-	text-transform: uppercase
-	// padding: 50% 30px 0
-	border-bottom: solid 1px #8cc63f
-	margin-bottom: 0
-
-.card p
-	color: #6d6b69
-	line-height: 1.3
-	letter-spacing: 1px
-	font-size: 16px
-
-.card svg
-	width: 100px
-	fill: #8cc63f
-	transition: all 300ms
-	&:hover
-		fill: #e8d03d
 
 .post
 	justify-content: space-around
@@ -256,7 +250,6 @@ a
 	overflow: hidden
 	img
 		width: 100%
-
 
 
 .wood-bg
@@ -283,6 +276,112 @@ a
 	p
 		color: #FFF
 		font-size: 16px
+
+
+// modal start
+.modal
+  display: none
+
+  position: fixed
+
+  z-index: 1
+  
+  left: 0
+  top: 0
+  width: 100%
+  
+  height: 100%
+
+  overflow: auto
+
+  background-color: rgb(0, 0, 0)
+
+  background-color: rgba(0, 0, 0, 0.4)
+
+  -webkit-animation-name: fadeIn
+
+  -webkit-animation-duration: 0.4s
+  animation-name: fadeIn
+  animation-duration: 0.4s
+
+/* Modal Content */
+
+.modal-content
+  position: fixed
+  left: 0
+  right: 0
+  background-color: #fefefe
+  margin: 15% auto
+  width: 40%
+  height: 350px
+  -webkit-animation-name: slideIn
+  -webkit-animation-duration: 0.4s
+  animation-name: slideIn
+  animation-duration: 0.4s
+
+/* The Close Button */
+
+.close
+  color: white
+  float: right
+  font-size: 28px
+  font-weight: bold
+  &:hover, &:focus
+    color: #000
+    text-decoration: none
+    cursor: pointer
+
+.modal-header
+  padding: 2px 16px
+  background-color: #9bd14c
+  color: white
+
+.modal-body
+  padding: 2px 16px
+  margin: 0 auto
+  width: 70%
+
+.modal-footer
+  padding: 2px 16px
+  background-color: #262626
+  color: white
+
+/* Add Animation */
+@-webkit-keyframes slideIn
+  from
+    top: -5%
+    opacity: 0
+
+  to
+    top: 20%
+    opacity: 1
+
+
+@keyframes slideIn
+  from
+    top: -5%
+    opacity: 0
+
+  to
+    top: 20%
+    opacity: 1
+
+
+@-webkit-keyframes fadeIn
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+//modal end
 
 .sec-2
     width: 100%
@@ -321,13 +420,6 @@ a
 	font-size: 18px
 	margin: 35px auto
 
-.column
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: space-around
 
 // button reset
 .btn
@@ -345,6 +437,8 @@ a
 	-webkit-transition: all 0.3s
 	-moz-transition: all 0.3s
 	transition: all 0.3s
+
+		
 
 .btn:after
 	content: ''
@@ -398,7 +492,7 @@ a
 	top: 6px
 
 a.main-link
-	color: #FFF
+	color: #404040
 	&:hover
 		color: #9bd14c
 
@@ -418,16 +512,7 @@ a.main-link
 	p
 		font-size: 16px
 
-// input[type="text"],
-// input[type="email"]
-// 	outline: none
-// 	background-color: transparent
-// 	color: #323d32
-// 	border: 0
-// 	border-bottom: 1px solid #323d32
-// 	width: 250px
-// 	margin: 10px
-// 	padding: 10px 0
+
 
 footer
 	background-color: #262525
@@ -435,12 +520,12 @@ footer
 .f-social-media
 	float: left
 
-.f-social-media ul
+.f-social-media
 	margin: 30px
-
-.f-social-media li
-	display: inline-block
-	padding: 20px
+	ul
+		li
+			display: inline-block
+			padding: 10px
 
 .copy
 	border: transparent
@@ -455,7 +540,90 @@ footer
 	color: #fff
 	text-transform: uppercase
 	letter-spacing: 1px
+	img
+		position: relative
+		width: 25%
 
-.payment img
-	position: relative
-	width: 25%
+
+.brands
+	height: 230px
+	background: #ededed
+	padding: 30px
+	h3
+		color: #526b54
+		margin: 15px 
+
+.brands-content
+	width: 800px
+	margin: 0 auto
+	text-align: center
+	ul
+		margin: 0
+		padding-left: 0
+		li
+			display: inline-block
+			margin: 0 20px
+
+.column
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+
+.plans
+	padding: 50px
+	background: #526b54
+	h3
+		color: #FFF
+		margin: 15px 
+		text-align: center
+
+.card
+	width: 250px
+	height: 300px
+	font-size: 24px
+	font-family: 'Short Stack', cursiva, serif
+	padding: 20px
+	text-align: center
+	border-radius: 5px
+	background-color: #FFF
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.25)
+	transition: all 300ms
+	&:hover
+		transform: scale(1.03)
+
+.card h4
+	color: #2d281e
+	font-size: 26px
+	text-transform: uppercase
+	border-bottom: solid 1px #8cc63f
+	margin: 2px
+
+.card p
+	color: #6d6b69
+	line-height: 2
+	letter-spacing: 1px
+	font-size: 32px
+
+.price
+	&:before
+		content: "R$"
+		color: #6b916e
+		font-size: 0.7em
+		vertical-align: top
+
+.newsletter, .login
+	input[type="text"],
+	input[type="password"],
+	input[type="email"]
+
+		outline: none
+		background-color: transparent
+		color: #323d32
+		border: 0
+		border-bottom: 2px solid #323d32
+		width: 250px
+		margin: 10px
+		padding: 10px 0

@@ -22,5 +22,8 @@
     "gulp-watch": "^4.3.11",
     "live-server": "^1.2.0",
     "normalize-sass": "^1.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2"
   }
 }
