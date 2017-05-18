@@ -496,7 +496,7 @@ a {
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: white;
+  color: #526b54;
   font-size: 18px;
   letter-spacing: 2px;
   margin: 10px; }
@@ -550,10 +550,6 @@ a {
 .search {
   float: left;
   width: 100px; }
-
-.search-input {
-  color: #FFF;
-  border-bottom: solid 2px #FFF; }
 
 .sec-products {
   padding: 70px;
@@ -624,33 +620,45 @@ a {
   display: none;
   position: fixed;
   z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s; }
+  background-color: rgba(0, 0, 0, 0.4); }
 
-/* Modal Content */
 .modal-content {
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: relative;
   background-color: #fefefe;
-  margin: 15% auto;
-  width: 40%;
-  height: 350px;
-  -webkit-animation-name: slideIn;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 480px;
+  height: 430px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
+  animation-name: animatetop;
   animation-duration: 0.4s; }
 
-/* The Close Button */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
 .close {
   color: white;
   float: right;
@@ -663,47 +671,19 @@ a {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #9bd14c;
-  color: white; }
+  background-color: #26B44C;
+  color: white;
+  text-align: center; }
 
 .modal-body {
   padding: 2px 16px;
-  margin: 0 auto;
-  width: 70%; }
+  width: 60%;
+  margin: 0 auto; }
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #262626;
+  background-color: #26B44C;
   color: white; }
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {
-    top: -5%;
-    opacity: 0; }
-  to {
-    top: 20%;
-    opacity: 1; } }
-
-@keyframes slideIn {
-  from {
-    top: -5%;
-    opacity: 0; }
-  to {
-    top: 20%;
-    opacity: 1; } }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 .sec-2 {
   width: 100%;
@@ -924,6 +904,10 @@ footer {
   font-size: 0.7em;
   vertical-align: top; }
 
+.login {
+  width: 100%;
+  margin: 0 auto; }
+
 .newsletter input[type="text"],
 .newsletter input[type="password"],
 .newsletter input[type="email"], .login input[type="text"],
@@ -937,3 +921,9 @@ footer {
   width: 250px;
   margin: 10px;
   padding: 10px 0; }
+  .newsletter input[type="text"]::-webkit-input-placeholder,
+  .newsletter input[type="password"]::-webkit-input-placeholder,
+  .newsletter input[type="email"]::-webkit-input-placeholder, .login input[type="text"]::-webkit-input-placeholder,
+  .login input[type="password"]::-webkit-input-placeholder,
+  .login input[type="email"]::-webkit-input-placeholder {
+    color: rbga(82, 107, 84, 0.7); }
