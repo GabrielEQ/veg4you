@@ -1,15 +1,11 @@
 <i class="sprite sprite-avatar"></i>
-
-<i class="sprite sprite-payment"></i>
-
-green social
-<i class="sprite sprite-f-g"></i>
-<i class="sprite sprite-i-g"></i>
-<i class="sprite sprite-t-g"></i>
-<i class="sprite sprite-g-g"></i>
-
-regular social
+<i class="sprite sprite-box-icon"></i>
 <i class="sprite sprite-f"></i>
-<i class="sprite sprite-i"></i>
-<i class="sprite sprite-t"></i>
+<i class="sprite sprite-f-g"></i>
 <i class="sprite sprite-g"></i>
+<i class="sprite sprite-g-g"></i>
+<i class="sprite sprite-i"></i>
+<i class="sprite sprite-i-g"></i>
+<i class="sprite sprite-search"></i>
+<i class="sprite sprite-t"></i>
+<i class="sprite sprite-t-g"></i>

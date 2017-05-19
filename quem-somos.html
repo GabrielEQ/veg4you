@@ -16,6 +16,12 @@
 	<!-- estilo -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#526b54">
 </head>
 <body>
 	<header class="main-header">
@@ -37,10 +43,13 @@
 		</div>
 		<nav class="navbar">
 			<div class="logo">
-				<a href="index.html"><img src="logo.svg" alt="VEG4YOU"></a>
+				<a href="index.html"><img src="logo.svg" alt="VEG4YOU"/></a>
 			</div>
 			<div class="search-bar">
-				<input class="single-input" type="text" id="search" placeholder="O que você procura?">
+				<input class="single-input" type="text" id="search" placeholder="O que você procura?"/>
+				<span class="search-icon">
+					<!--<i class="sprite sprite-search"></i>-->
+				</span>
 			</div>
 			<div class="navbar-links">
 				<ul>
@@ -54,33 +63,47 @@
 
 			<div class="btns-signIn">
 				<ul>
-					<li><a class="btn btn-secundario btn-sec" id="enter" href="#">Entrar</a></li>
-					<li><a class="btn btn-primario btn-pri " href="#">Cadastre-se</a></li>
+					<li><a class="btn btn-secundario btn-sec" id="enter" href="#">Login</a></li>
+					<li><a class="btn btn-primario btn-pri " href="cadastro.html">Cadastre-se</a></li>
 				</ul>
 			</div>
-
+			
 		</nav>
-		<!--modal-->
-		<!-- Trigger/Open The Modal -->
-			<!-- The Modal -->
+			<!--<div class="cartBox">
+					<i class="sprite sprite-box-icon"></i>
+			</div>-->
+		<!-- The Modal -->
 			<div id="myModal" class="modal">
-
 			<!-- Modal content -->
 			<div class="modal-content">
 				<div class="modal-header">
 				<span class="close">&times;</span>
-				<h2>Login</h2>
+				<h4>Login</h4>
 				</div>
 				<div class="modal-body">
-				<div class="login">
-					<p><input type="text" id="usuario" placeholder="Usuário ou E-mail"/></p>
-					<p><input type="password" id="password" placeholder="Senha"/></p>
+					<div class="sign-option">
+						<p>Entre com</p>
+						<ul>
+							<li><a href="https://www.facebook.com/" target="_blank"><i class="sprite sprite-f-g"></i></a></li>
+							<li><a href="https://www.twitter.com/" target="_blank"><i class="sprite sprite-t-g"></i></a></li>
+							<li><a href="https://www.plus.google.com/" target="_blank"><i class="sprite sprite-g-g"></i></a></li>
+						</ul>
+					</div>
+					<hr>
+					<p>ou</p>
+					<form action="">
+					<div class="login">
+						<p><input type="text" id="usuario" placeholder="Usuário ou E-mail"/></p>
+						<p><input type="password" id="password" placeholder="Senha"/></p>
+					</div>
+					<div class="btn-box">
+						<a href="planos.html" class="btn btn-sec btn-secundario">Entrar</a>
+					</div>
+					</form>
 				</div>
-				<div class="cta"><a href="" class="btn btn-pri btn-primario">Entrar</a></div>
+				<div class="modal-footer">
+				<h4>Se ainda não tem conta, <a href="cadastro.html" class="btn btn-pri btn-primario">Cadastre-se</a> agora.</h4>
 				</div>
-				<!--<div class="modal-footer">
-				<h3>Modal Footer</h3>
-				</div>-->
 			</div>
 
 			</div>
@@ -95,8 +118,22 @@
 
 	</header>
 
-    <!--Sobre-->
+	<!--Quem somos-->
+	<section class="company">
+		<div class="container">
+			<div class="about-text">
+				<h2 class="custom-title">Sobre nós</h2>
+				<p>A <i>Veg4you</i> nasceu com o intuito de atender o público vegano, vegetariano e as pessoas que se interessam nesse meio.</p>
+				<p>Nosso intenção é promover uma diferenciada atenção para pessoas do mundo "VEG" surgia quando notada a dificuldade dessas pessoas em encontrar produtos que atendem as suas necessidades.</p>
+				<p>A <i>VEG4YOU</i> tem como referência um clube de assinaturas com 3 temas, alimentos(Snacks, higiene pessoal, cosméticos, tudo voltado ao universo Veg</p>
+			
+			<div class="about-img">
+				<img src="assets/images/about-bg.jpg" alt=""/>
+			</div>
+			</div>
+		</div>
 
+	</section>
 	<section class="sec-newsletter">
 		<div class="newsletter">
 			<div class="newsletter-heading">
@@ -115,10 +152,10 @@
 		<div class="container">
 			<div class="f-social-media">
 				<ul>
-					<li><a href="#"><i class="sprite sprite-f"></i></a></li>
-					<li><a href="#"><i class="sprite sprite-i"></i></a></li>
-					<li><a href="#"><i class="sprite sprite-t"></i></a></li>
-					<li><a href="#"><i class="sprite sprite-g"></i></a></li>
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="sprite sprite-f"></i></a></li>
+					<li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="sprite sprite-i"></i></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><i class="sprite sprite-t"></i></a></li>
+					<li><a href="https://plus.google.com/" target="_blank"><i class="sprite sprite-g"></i></a></li>
 				</ul>
 			</div>
 			<div class="payment">
