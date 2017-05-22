@@ -990,7 +990,7 @@ small {
   text-align: center; }
 
 .product-inner {
-  padding: 20px 0;
+  padding: 50px 0;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -1009,27 +1009,90 @@ small {
   width: 65%; }
 
 /*cart*/
+  
+.page {
+  background: #FFF;
+  width: 100%;
+  height: auto;
+  padding: 70px 10px;}
+
 .sec-cart {
   text-align: center;
   padding: 20px;
   background: #efefef; }
-	.demo {
-		border:1px solid #Efefef;
+	.cart-table {
+		border:1px solid #ddd;
 		border-collapse:collapse;
 		padding:5px;
 		width:100%;
 		margin:0 auto
 	}
-	.demo th {
+	.cart-table th {
 		border:1px solid Efefef;
 		padding:5px;
 		background:#F0F0F0;
 	}
-	.demo td {
+	.cart-table td {
 		border:1px solid Efefef;
 		padding:5px;
 	}
-.page {
-  background: #FFF;
-  height: 300px;
-  width: 100%; }
+
+.inputNumber{
+  outline: none;
+  border: 1px solid #9bd14c;
+  width: 50px;
+  padding: 10px;
+}
+
+.cep-btn {
+  text-align: left;
+  padding: 40px;
+}
+
+.checkout-btn{
+  padding: 40px;
+  text-align: right;
+}
+
+.shipping{
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"]{
+    outline: none;
+  background-color: transparent;
+  color: #323d32;
+  border: 0;
+  border-bottom: 2px solid #323d32;
+  width: 250px;
+  margin: 10px;
+  padding: 10px 0; 
+}
+
+.form{
+  width: 500px;
+  margin: 0 auto;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+.form-column{
+
+}
+
+.cardcred{
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-around;
+}
