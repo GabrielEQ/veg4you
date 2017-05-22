@@ -583,7 +583,7 @@ a {
   margin: 0 auto; }
 
 .post {
-  padding: 200px 0 0;
+  padding: 90px 0 0;
   justify-content: space-around;
   -webkit-display: flex;
   -moz-display: flex;
@@ -728,7 +728,8 @@ a {
   height: 850px;
   position: relative;
   margin: 150px 0 0;
-  padding: 0 0 50px; }
+  padding: 0 0 50px;
+  color: #fff; }
 
 .products {
   -webkit-display: flex;
@@ -763,13 +764,11 @@ a {
 .about {
   width: 900px;
   text-align: center;
-  color: #fff;
   font-size: 18px;
   padding: 50px;
   margin: 0 auto; }
   .about h2 {
     font-size: 42px;
-    color: #FFF;
     letter-spacing: 2px;
     margin: 2px; }
     .about h2 p {
@@ -905,7 +904,7 @@ footer {
   text-align: center; }
   .brands ul {
     margin: 0;
-    padding-left: 0; }
+    padding: 30px; }
     .brands ul li {
       display: inline-block;
       margin: 0 20px; }
@@ -917,7 +916,7 @@ footer {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-start; }
 
 .plans-content {
   background: #efefef;
@@ -1008,3 +1007,14 @@ small {
 
 .product-details {
   width: 65%; }
+
+/*cart*/
+.sec-cart {
+  text-align: center;
+  padding: 20px;
+  background: #efefef; }
+
+.page {
+  background: #FFF;
+  height: 300px;
+  width: 100%; }

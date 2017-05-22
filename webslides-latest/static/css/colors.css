@@ -182,9 +182,13 @@ Slides - Backgrounds <section class="bg-primary">
 }
 
 .bg-veg4you {
-  background: linear-gradient(to bottom, #526b54 0%, #9bd14c 100%);
+  background: linear-gradient(to bottom, #3ade78 0%, #9bd14c 100%);
 }
 
+.bg-veg4you h1, .bg-veg4you h2{
+  color: #526b54;
+  font-weight: bold;
+}
 
 /* BG Facebook */
 
@@ -903,7 +907,7 @@ Slides (Counter/Arrows)
 */
 #counter,
 #navigation a {
-  color: #abc;
+  color: #000;
 }
 
 #webslides:hover #navigation a:hover {
