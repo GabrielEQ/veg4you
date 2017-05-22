@@ -12,6 +12,9 @@
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat|Short+Stack" rel="stylesheet">
+	<!--icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 	<!-- estilo -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -26,18 +29,18 @@
 <body>
 	<header class="main-header">
 		<div class="top-info">
+			
+			<div class="top-menu">
+				<ul>
+					<li><a href="quem-somos.html">Quem somos</a></li>
+					<li><a href="parceiros">Possíveis parceiros</a></li>
+				</ul>
+				
+			</div>
 			<div class="top-contact-info">
 				<ul>
 					<li><a href="mailto:contato@veg4you.com.br">contato@veg4you.com.br</a></li>
 					<li><a href="tel:11940262001">(11) 94026-2001</a></li>
-				</ul>
-			</div>
-			<div class="top-social">
-				<ul>
-					<li><a href="https://www.facebook.com/" target="_blank"><i class="sprite sprite-f-g"></i></a></li>
-					<li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="sprite sprite-i-g"></i></a></li>
-					<li><a href="https://twitter.com/" target="_blank"><i class="sprite sprite-t-g"></i></a></li>
-					<li><a href="https://plus.google.com" target="_blank"><i class="sprite sprite-g-g"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,26 +48,26 @@
 			<div class="logo">
 				<a href="index.html"><img src="logo.svg" alt="VEG4YOU"/></a>
 			</div>
-			<div class="search-bar">
-				<input class="single-input" type="text" id="search" placeholder="O que você procura?"/>
-				<span class="search-icon">
-					<!--<i class="sprite sprite-search"></i>-->
-				</span>
-			</div>
+			
 			<div class="navbar-links">
 				<ul>
-					<li><a class="main-link" href="quem-somos.html">Quem somos</a></li>
-					<li><a class="main-link" href="produtos.html">Produtos</a></li>
-					<li><a class="main-link" href="#brand">Marcas</a></li>
+					<li><a class="main-link" href="alimentos.html">Alimentos</a></li>
+					<li><a class="main-link" href="higiene.html">Higiene pessoal</a></li>
+					<li><a class="main-link" href="beleza">Beleza</a></li>
 					<!--<li><a class="main-link" href="entrega.html">Entrega</a></li>-->
 				</ul>
 
 			</div>
-
+			<div class="checkout">
+				<ul>
+					<li><a href=""><i class="material-icons">&#xE8CC;</i><br/>Carrinho</a></li>
+					<li><a href=""><i class="material-icons">&#xE85D;</i><br/>Finalizar pedido</a></li>
+				</ul>
+			</div>
 			<div class="btns-signIn">
 				<ul>
 					<li><a class="btn btn-secundario btn-sec" id="enter" href="#">Login</a></li>
-					<li><a class="btn btn-primario btn-pri " href="cadastro.html">Cadastre-se</a></li>
+					<li><a class="btn btn-primario btn-pri " href="cadastro.html">Assine-já</a></li>
 				</ul>
 			</div>
 			
@@ -108,13 +111,7 @@
 
 			</div>
 		<!--end modal-->
-		<div class="products-menu">
-			<ul>
-				<li class="alimentos"><a href="#">Alimentos</a></li>
-				<li class="higiene"><a href="#">Higiene</a></li>
-				<li class="beleza"><a href="#">Cosméticos</a></li>
-			</ul>
-		</div>
+		
 
 	</header>
 
@@ -168,18 +165,18 @@
 	</div>
 
 
-<section class="sec-2 wood-bg">
-<div class="bg-green">
-	<div class="sec-2-title">
-		<h2 class="custom-title">Receba os mais novos lançamentos
-	do mundo vegano/vegetariano</h2>
+<section class="sec-2">
+	<div class="bg-green">
+		<div class="about">
+			<h2 class="sec-2-title custom-title">Receba os mais novos lançamentos
+			do mundo vegano/vegetariano</h2>
+			<p>Basicamente concentramos as novidades do mercado vegano/vegetariano em um só lugar. Basta escolher um dos planos, mensal, trimestral ou semestral e pronto. Sua cesta chegará até você sem precisar sair de sua casa.</p>
+		</div>
 	</div>
 </div>
 
 		<div class="container">
-				<div class="about">
-								<p>Basicamente concentramos as novidades do mercado vegano/vegetariano em um só lugar. Basta escolher um dos planos, mensal, trimestral ou semestral e pronto. Sua cesta chegará até você sem precisar sair de sua casa.</p>
-				</div>
+				
 			<div class="post">
 				<div class="post-item">
 					<!-- <a href="">Alimentos</a> -->
@@ -204,85 +201,8 @@
 			</div>
 		</div>
 
-		<!--<div class="container">
-		<article class="features">
-			<div class="column">
-				<div class="column-item card">
-					<img src="" alt="">
-					<svg class="icon">
-					<use xlink:href="#star" />
-					</svg>
-					<h3>Qualidade</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempora consequuntur ipsum dolor amet. Sint voluptates doloribus asperiores. </p>
-				</div>
-
-				<div class="column-item card">
-					<img src="" alt="">
-					<svg class="icon">
-					<use xlink:href="#paper"/>
-					</svg>
-					<h3>Variedade</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sed eos doloremque architecto, perferendis tempora alias error repellendus id, cumque tenetur.</p>
-				</div>
-
-				<div class="column-item card">
-					<img src="" alt="">
-					<svg class="icon">
-					<use xlink:href="#cross"/>
-					</svg>
-					<h3>Saudabilidade</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aperiam eum asperiores, voluptas eligendi temporibus culpa odit, alias excepturi recusandae at? .</p>
-				</div>
-			</div>
-		</article>
-	</div>-->
-
 	</section>
-<aside id="brand" class="brands">
-	<div class="brands-content">
-		<h3 class="custom-title">Possíveis parceiros</h3>
-		<ul>
-			<li><img src="assets/images/b1.png" alt="Mae terra"></li>
-			<li><img src="assets/images/b2.png" alt="Snatt's"></li>
-			<li><img src="assets/images/b3.png" alt="Kellog's"></li>
-			<li><img src="assets/images/b4.png" alt="Quaker"></li>
-		</ul>
-	</div>
-</aside>
 
-<section class="plans">
-		<div class="container">
-			
-			<article>
-				<h3 class="custom-title">Escolha o melhor plano para você</h3>
-				<div class="column">
-					<div class="column-item card wow slideInLeft">
-						<h4>Mensal</h4>
-						<p class="price">250,<span>00</span></p>
-						<div class="cta">
-							<a class="btn btn-primario btn-pri" href="#">assine-já</a>
-						</div>
-					</div>
-
-					<div class="column-item card wow bounceIn">
-						<h4>Semestral</h4>
-						<p class="price">550,<span>00</span></p>
-						<div class="cta">
-							<a class="btn btn-primario btn-pri" href="#">assine-já</a>
-						</div>
-					</div>
-
-					<div class="column-item card wow slideInRight">
-						<h4>Anual</h4>
-						<p class="price">630,<span>00</span></p>
-						<div class="cta">
-							<a class="btn btn-primario btn-pri" href="#">assine-já</a>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-	</section>
 	<section class="sec-newsletter">
 		<div class="newsletter">
 			<div class="newsletter-heading">

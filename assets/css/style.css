@@ -455,73 +455,72 @@ a {
     color: #526b54; }
 
 .top-contact-info {
-  display: inline-block; }
+  display: inline-block;
+  float: right; }
+  .top-contact-info ul {
+    padding-left: 0;
+    padding-right: 1em; }
+    .top-contact-info ul li {
+      display: inline;
+      padding: 10px; }
 
-.top-contact-info li {
-  display: inline;
-  padding: 10px; }
-
-.top-social {
-  float: right;
+.top-menu {
   display: inline-block;
   margin-right: 50px; }
-  .top-social ul {
-    padding: 0;
-    margin: 0; }
-    .top-social ul li {
-      display: inline-block;
-      padding: 5px; }
+  .top-menu ul li {
+    display: inline-block;
+    padding: 5px;
+    border-right: 1px solid #84c73e; }
 
 .navbar {
   padding: 5px;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  height: 100px;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-around; }
 
 .logo {
-  width: 200px;
-  text-align: center;
-  margin: 15px 50px;
+  width: 150px;
+  margin: 20px 40px;
   float: left; }
 
 .clear {
   clear: both; }
 
-.navbar-links ul li {
+.navbar-links li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 25px 10px;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   border-right: 1px solid #9bd14c; }
 
-.single-input {
-  outline: none;
-  padding: 10px;
-  background: transparent;
-  border: 0;
-  border-bottom: solid #526b54 3px;
-  width: 300px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: #526b54;
-  font-size: 18px;
-  letter-spacing: 2px;
-  margin: 10px; }
-  .single-input:focus {
-    border-bottom: solid #84c73e  3px; }
+.checkout {
+  text-align: center; }
+  .checkout ul {
+    padding-left: 0; }
+    .checkout ul li {
+      padding: 15px;
+      display: inline-block; }
+      .checkout ul li a {
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+        color: #526b54; }
+        .checkout ul li a:hover {
+          color: #26B44C; }
 
-.btns-signIn {
-  float: right;
-  right: 50px;
-  top: 100px;
-  position: absolute; }
-  .btns-signIn ul {
-    margin: 0; }
-    .btns-signIn ul li {
-      display: inline-block;
-      margin: 0 5px; }
+.btns-signIn ul {
+  padding: 20px; }
+  .btns-signIn ul li {
+    display: inline-block;
+    margin: 5px; }
 
 .cartBox {
   float: right;
@@ -560,10 +559,6 @@ a {
   width: 50px;
   height: 50px;
   background: url("../images/avatar.png"); }
-
-.search {
-  float: left;
-  width: 100px; }
 
 .sec-products {
   padding: 70px;
@@ -736,25 +731,30 @@ a {
   flex-wrap: wrap; }
 
 .bg-green {
-  background-color: #9bd14c; }
+  background-color: #526b54; }
 
-.sec-2-title {
-  width: 800px;
-  padding: 70px;
+.sec-2 {
+  width: 100%;
   text-align: center;
   line-height: 1.2;
+  background: url("../images/bg-wood.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.about {
+  width: 900px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 50px;
   margin: 0 auto; }
-  .sec-2-title h2 {
+  .about h2 {
     font-size: 42px;
     color: #FFF;
     letter-spacing: 2px;
     margin: 2px; }
-
-.about {
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-  margin: 35px auto; }
+    .about h2 p {
+      font-size: 50px; }
 
 .btn {
   border: none;
@@ -787,7 +787,7 @@ a {
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
-  padding: 15px 35px; }
+  padding: 15px; }
 
 .btn-pri {
   border-radius: 5px; }
@@ -807,7 +807,7 @@ a {
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
-  padding: 15px 35px; }
+  padding: 15px 10px; }
 
 .btn-sec {
   border-radius: 5px; }
@@ -821,7 +821,13 @@ a {
   top: 6px; }
 
 a.main-link {
-  color: #404040; }
+  text-transform: uppercase;
+  color: #404040;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
   a.main-link:hover {
     color: #9bd14c; }
 
