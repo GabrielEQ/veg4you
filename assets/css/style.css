@@ -1013,7 +1013,22 @@ small {
   text-align: center;
   padding: 20px;
   background: #efefef; }
-
+	.demo {
+		border:1px solid #Efefef;
+		border-collapse:collapse;
+		padding:5px;
+		width:100%;
+		margin:0 auto
+	}
+	.demo th {
+		border:1px solid Efefef;
+		padding:5px;
+		background:#F0F0F0;
+	}
+	.demo td {
+		border:1px solid Efefef;
+		padding:5px;
+	}
 .page {
   background: #FFF;
   height: 300px;
