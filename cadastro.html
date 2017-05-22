@@ -12,6 +12,9 @@
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat|Short+Stack" rel="stylesheet">
+	<!--icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 	<!-- estilo -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -26,18 +29,18 @@
 <body>
 	<header class="main-header">
 		<div class="top-info">
+			
+			<div class="top-menu">
+				<ul>
+					<li><a href="quem-somos.html">Quem somos</a></li>
+					<li><a href="parceiros.html">Possíveis parceiros</a></li>
+				</ul>
+				
+			</div>
 			<div class="top-contact-info">
 				<ul>
 					<li><a href="mailto:contato@veg4you.com.br">contato@veg4you.com.br</a></li>
 					<li><a href="tel:11940262001">(11) 94026-2001</a></li>
-				</ul>
-			</div>
-			<div class="top-social">
-				<ul>
-					<li><a href="https://www.facebook.com/" target="_blank"><i class="sprite sprite-f-g"></i></a></li>
-					<li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="sprite sprite-i-g"></i></a></li>
-					<li><a href="https://twitter.com/" target="_blank"><i class="sprite sprite-t-g"></i></a></li>
-					<li><a href="https://plus.google.com" target="_blank"><i class="sprite sprite-g-g"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,26 +48,26 @@
 			<div class="logo">
 				<a href="index.html"><img src="logo.svg" alt="VEG4YOU"/></a>
 			</div>
-			<div class="search-bar">
-				<input class="single-input" type="text" id="search" placeholder="O que você procura?"/>
-				<span class="search-icon">
-					<!--<i class="sprite sprite-search"></i>-->
-				</span>
-			</div>
+			
 			<div class="navbar-links">
 				<ul>
-					<li><a class="main-link" href="quem-somos.html">Quem somos</a></li>
-					<li><a class="main-link" href="produtos.html">Produtos</a></li>
-					<li><a class="main-link" href="#brand">Marcas</a></li>
+					<li><a class="main-link" href="alimentos.html">Alimentos</a></li>
+					<li><a class="main-link" href="higiene.html">Higiene pessoal</a></li>
+					<li><a class="main-link" href="beleza.html">Beleza</a></li>
 					<!--<li><a class="main-link" href="entrega.html">Entrega</a></li>-->
 				</ul>
 
 			</div>
-
+			<div class="checkout">
+				<ul>
+					<li><a href=""><i class="material-icons">&#xE8CC;</i><br/>Carrinho</a></li>
+					<li><a href=""><i class="material-icons">&#xE85D;</i><br/>Finalizar pedido</a></li>
+				</ul>
+			</div>
 			<div class="btns-signIn">
 				<ul>
 					<li><a class="btn btn-secundario btn-sec" id="enter" href="#">Login</a></li>
-					<li><a class="btn btn-primario btn-pri " href="cadastro.html">Cadastre-se</a></li>
+					<li><a class="btn btn-primario btn-pri " href="cadastro.html">Assine-já</a></li>
 				</ul>
 			</div>
 			
@@ -89,8 +92,8 @@
 							<li><a href="https://www.plus.google.com/" target="_blank"><i class="sprite sprite-g-g"></i></a></li>
 						</ul>
 					</div>
-					
-					-<p>ou</p>-
+					<hr>
+					<p>ou</p>
 					<form action="">
 					<div class="login">
 						<p><input type="text" id="usuario" placeholder="Usuário ou E-mail"/></p>
@@ -105,17 +108,8 @@
 				<h4>Se ainda não tem conta, <a href="cadastro.html" class="btn btn-pri btn-primario">Cadastre-se</a> agora.</h4>
 				</div>
 			</div>
-
 			</div>
 		<!--end modal-->
-		<div class="products-menu">
-			<ul>
-				<li class="alimentos"><a href="#">Alimentos</a></li>
-				<li class="higiene"><a href="#">Higiene</a></li>
-				<li class="beleza"><a href="#">Cosméticos</a></li>
-			</ul>
-		</div>
-
 	</header>
 
 <section class="sec-signin">
@@ -138,21 +132,7 @@
 		</div>
 	</div>
 </section>
-	
-	<section class="sec-newsletter">
-		<div class="newsletter">
-			<div class="newsletter-heading">
-				<h2 class="custom-title">Não vá embora sem se inscrever</h2>
-				<p>Fique por dentro de tudo o que acontece</p>
-			</div>
-			<form>
-				<input type="text" id="nome" placeholder="Seu nome"/>
-				<input type="email" id="email" placeholder="Seu E-mail"/>
-				<button type="submit" class="btn btn-sec btn-secundario">Inscrever-se</button>
-			</form>
-		</div>
-	</section>
-	
+
 	<footer>
 		<div class="container">
 			<div class="f-social-media">

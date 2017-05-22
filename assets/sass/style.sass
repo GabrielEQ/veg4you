@@ -141,29 +141,29 @@ a
 
 .logo
 	width: 150px
-	margin: 20px 40px
-	float: left
-
+	margin: 20px 5px
 
 .clear
 	clear: both
 
 
 .navbar-links
-	li
-		display: inline-block
-		padding: 25px 10px
-		font-size: 14px
-		letter-spacing: 1px
-		text-transform: uppercase
-		border-right: 1px solid #9bd14c
+	ul
+		padding-left: 0
+		li
+			display: inline-block
+			padding: 25px 10px
+			font-size: 14px
+			letter-spacing: 1px
+			text-transform: uppercase
+			border-right: 1px solid #9bd14c
 
 .checkout
 	text-align: center
 	ul
 		padding-left: 0
 		li
-			padding: 15px
+			padding: 10px
 			display: inline-block
 			a
 				-webkit-transition: all 300ms
@@ -240,15 +240,14 @@ a
 	height: auto
 
 .cta
-	margin: 70px 0
-	font-size: 14px
+	margin: 30px 0
 
 .container
-	width: 65%
+	width: 80%
 	margin: 0 auto
 
 .post
-	padding: 70px 0
+	padding: 200px 0 0
 	justify-content: space-around
 	-webkit-display: flex
 	-moz-display: flex
@@ -262,13 +261,20 @@ a
 	width: 100%
 	height: auto
 	// background: #FFF
-	margin: 25px 5px
+	margin: 20px
 	border-radius: 3px
 	overflow: hidden
 	img
 		width: 100%
 
-
+.post-item
+	-webkit-transition: all 500ms ease-in-out
+	-moz-transition: all 500ms ease-in-out
+	-ms-transition: all 500ms ease-in-out
+	-o-transition: all 500ms ease-in-out
+	transition: all 500ms ease-in-out
+	&:hover
+		transform: translate(0, -50px)
 .wood-bg
 	background-image: url('../images/bg-wood.png')
 	background-repeat: no-repeat
@@ -278,7 +284,7 @@ a
 .slide-caption
 	padding: 120px 10%
 	position: absolute
-	z-index: 200
+	z-index: 1000
 	background: rgba(0,0,0,0.7)
 	top: 0
 	right: 0
@@ -289,10 +295,10 @@ a
 		font-size: 50px
 		margin: 0
 		span
-			color: #84c73e
+			color: $light-green
 	p
 		color: #FFF
-		font-size: 16px
+		font-size: 26px
 
 .btn-box
 	margin: 30px 15px
@@ -406,7 +412,7 @@ a
 	flex-wrap: wrap
 
 .bg-green
-	background-color: $dark-green
+	+gradient(0deg,$light-green,$green)
 
 .sec-2
 	width: 100%
@@ -416,6 +422,9 @@ a
 	background-size: cover
 	background-repeat: no-repeat
 
+.company
+	padding: 40px 0
+	
 .about	
 	width: 900px
 	text-align: center
@@ -467,7 +476,7 @@ a
 	-webkit-transition: none
 	-moz-transition: none
 	transition: none
-	padding: 15px
+	padding: 12px
 
 .btn-pri
 	border-radius: 5px
@@ -489,7 +498,7 @@ a
 	-webkit-transition: none
 	-moz-transition: none
 	transition: none
-	padding: 15px 10px
+	padding: 12px 10px
 
 .btn-sec
 	border-radius: 5px
@@ -529,10 +538,6 @@ a.main-link
 	p
 		font-size: 16px
 
-.about-text
-	width: 80%
-	margin: 100px auto
-	font-size: 18px
 
 .about-img
 	img
@@ -545,8 +550,9 @@ footer
 	float: left
 
 .f-social-media
-	margin: 30px
+	margin: 30px 0
 	ul
+		padding-left: 0
 		li
 			display: inline-block
 			padding: 10px
@@ -570,16 +576,7 @@ footer
 
 
 .brands
-	height: 230px
-	background: #ededed
-	padding: 30px
-	h3
-		color: $dark-green
-		margin: 15px 
-
-.brands-content
-	width: 800px
-	margin: 0 auto
+	padding: 50px
 	text-align: center
 	ul
 		margin: 0
@@ -588,48 +585,48 @@ footer
 			display: inline-block
 			margin: 0 20px
 
+
 .column
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
 	display: -o-flex
 	display: flex
-	justify-content: space-around
+	justify-content: space-between
+	align-items: center
 
-.plans
-	padding: 50px
-	background: $dark-green
-	h3
-		color: #FFF
-		margin: 15px 
-		text-align: center
+.plans-content
+	background: #efefef
+	padding: 10px
 
-.card
-	width: 250px
-	height: 300px
-	font-size: 24px
-	font-family: 'Short Stack', cursiva, serif
-	padding: 20px
+.plans-item
+	width: 170px
+	height: 190px
+	padding: 10px
+	margin: 3px
 	text-align: center
-	border-radius: 5px
+	h3
+		font-family: 'Walter Turncoat', sans-serif
+		font-size: 20px
+.plans
+	-webkit-display: flex
+	-moz-display: flex
+	-ms-display: flex
+	-o-display: flex
+	display: flex
+	justify-content: space-around
+.card	
+	border-radius: 3px
 	background-color: #FFF
 	box-shadow: 1px 3px 5px rgba(0,0,0,0.25)
-	transition: all 300ms
-	&:hover
-		transform: scale(1.03)
 
-.card h4
-	color: #2d281e
-	font-size: 26px
-	text-transform: uppercase
-	border-bottom: solid 1px #8cc63f
-	margin: 2px
-
-.card p
-	color: #6d6b69
-	line-height: 2
-	letter-spacing: 1px
-	font-size: 32px
+.price	
+	p
+		font-size: 22px
+		display: inline
+small
+	font-family: 'Short Stack', cursiva, serif
+	font-size: 14px
 
 .price
 	&:before
@@ -653,9 +650,28 @@ footer
 		margin: 10px
 		padding: 10px 0
 		&::-webkit-input-placeholder
-  			color: rbga(82,107,84,0.7)
+			color: $dark-green
 
 
 
 .sign-heading
 	text-align: center
+
+.product-inner
+	padding: 20px 0
+	-webkit-display: flex
+	-moz-display: flex
+	-ms-display: flex
+	-o-display: flex
+	display: flex
+	align-items: center
+	justify-content: space-around
+.product-thumb
+	width: 30%
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.20)
+	img
+		width: 100%
+
+.product-details
+	width: 65%
+
